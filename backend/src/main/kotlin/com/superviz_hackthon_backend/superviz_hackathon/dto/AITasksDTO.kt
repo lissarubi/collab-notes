@@ -1,3 +1,3 @@
 package com.superviz_hackthon_backend.superviz_hackathon.dto
 
-data class AITasks(val tasks: List<String>)
+data class AITasksDTO(val tasks: List<String>)

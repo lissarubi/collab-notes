@@ -15,9 +15,6 @@ import java.net.URI
 @RestController
 @RequestMapping("/user")
 class UserController(private val service: UserService) {
-    @GetMapping
-    fun listUsers() = ResponseEntity.ok();
-
     @PostMapping
     fun post(@RequestBody message: UserDTO): ResponseEntity<User> {
         val savedUser = service.save(message)
